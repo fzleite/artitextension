@@ -1,0 +1,16 @@
+{
+    "users" : {
+        "fleite" : {
+            "full_name" : "Fernando Zimmermann Leite",
+            "email" : "fleite@artit.com.br",
+            "picture" : "http://",
+            "ultimo_apontamento" : "01/04/2018"
+        },
+        "amatos" : {
+            "full_name" : "Andre Matos",
+            "email" : "rjunior@artit.com.br",
+            "picture" : "http://",
+            "ultimo_apontamento" : "01/04/2018"
+        }
+    }
+}

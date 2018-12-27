@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Art IT Intelligent Technology</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/artitextension.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+  </head>
+  <body>
+    <table border=0 cellpading=0 width="100%">
+      <tr>
+        <th colspan="4" align="center" class="title">APONTAMENTO DE HORAS ART IT (<a id="a-disconnect" href="http://desconectar">desconectar</a>)<div id="adminLink"></div></th>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div id="notificationAlert" class="alert"></div>
+          <b>Regras de Apontamento de Horas:</b>
+          <ol>
+            <li>O apontamento deve ser feito diariamente de prefer&ecirc;ncia;</li>
+            <li>O periodo m&aacute;ximo entre um apontamento &eacute; de 8 (oito) dias, considerando os finais de semana. Ap&oacute;s este per&iacute;odo o Rosie ser&aacute; bloqueado e uma solicita&ccedil;&atilde;o de libera&ccedil;&atilde;o dever&aacute; ser encaminhada para o seu gestor Art IT;</li>
+            <li>O Rosie ser&aacute; bloqueado para o lan&ccedil;amento de horas no 1&ordm; dia de cada m&ecirc;s para fechamento do per&iacute;odo anterior;</li>
+            <li>O &uacute;ltimo dia de cada m&ecirc;s ser&aacute; bloqueado para a gera&ccedil;&atilde;o de pr&eacute;via de fechamento.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td><div class="box"><a id="a-asaloc"  href="https://rosie.artit.com.br/rh/apontamento-horas"><img class="icon" src="images/asaloc.png"></a></div></td>
+        <td><div class="box"><a id="a-rosie"   href="https://rosie.artit.com.br"><img class="icon" src="https://rosie.artit.com.br/assets/images/logo_rosie_sm.png"></a></td>
+        <td><div class="box"><a id="a-profile" href="https://rosie.artit.com.br/user/perfil"><img class="icon" src="images/profile.png"></a></div></td>
+        <td><div class="box"><a id="a-site"    href="http://www.artit.com.br/"><img class="icon" src="images/www.png"></a></div></td>
+      </tr>
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/popup.js"></script>
+    
+  </body>
+
+</html>

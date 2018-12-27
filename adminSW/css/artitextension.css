@@ -1,0 +1,100 @@
+body {
+    min-width: 180px; /* your desired width */
+    max-width: 180;
+    position: relative;
+    vertical-align:middle;
+}
+
+.box {
+    transition: box-shadow .3s;
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    border-radius:5px;
+    border: 0px solid #ccc;
+    float: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0;
+    line-height: 80px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    border: 1px solid #ccc;
+}
+
+.title {
+    text-align: center;
+    background-color: #fafafa;
+}
+
+img.icon {
+    width: 45px;
+}
+
+ol {
+    counter-reset:li; /* Inicia o contador */      
+    margin-left:0; /* Remove margin padrão */      
+    padding-left:0; /* Remove padding padrão */  
+}  
+
+ol > li {      
+    position:relative; /* Cria contexto de posicionamento */      
+    margin:0 0 8px 2em; /* margem para abrir espaço para a numeração */      
+    padding:2px 16px; /* Espaçamento em volta do conteúdo */      
+}  
+
+ol > li:before {      
+    content:counter(li); /* Define um contador como conteúdo */      
+    counter-increment:li; /* Incrementa o contador de 1 */      
+    /* Posicionamento e estilização do número */     
+    position:absolute;      
+    top:-2px;      
+    left:-2em;      
+    -moz-box-sizing:border-box;     
+    -webkit-box-sizing:border-box;      
+    box-sizing:border-box;      
+    width:2em;      /* Espaçamento entre número e texto em navegadores que suportam conteúdo gerado, ams não o posicionam(Camino 2 por exemplo) */      
+    margin-right:8px;      
+    padding:4px;      
+    border-top:2px solid #666;      
+    color:#fff;      
+    background:#666;      
+    font-weight:bold;      
+    font-family:"Helvetica Neue", Arial, sans-serif;      
+    text-align:center;  
+}  
+
+li ol,  li ul {
+    margin-top:6px;
+}
+
+ol ol li:last-child {
+    margin-bottom:0;
+}
+
+.alert {
+    border-radius: 35px;
+    background: #FF0000;
+    font-weight: bold;
+    color: #FFFF00;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+
+.collapsible-body {
+    display: none;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 0rem 0rem;
+}
+
+td, th {
+    padding: 5px 10px;
+}

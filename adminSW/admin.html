@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Art IT Administra&ccedil;&atilde;o</title>
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <link rel="stylesheet" href="./css/artitextension.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="manifest" href="manifest.json">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" content="#7986cb">
+  <meta name="msapplication-TileColor" content="#7986cb">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/angular-1.0.1.min.js"></script>
+  <script type="text/javascript" src="./js/materialize.min.js"></script>
+
+</head>
+
+<body>
+  <!-- *******************************************-->
+  <!--                    NAVBAR                  -->
+  <!-- *******************************************-->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo left">
+          <i data-activates="slide-out" id="sideMenu" class="material-icons">menu</i>Art IT</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- *******************************************-->
+  <!--                    SIDNAV                  -->
+  <!-- *******************************************-->
+  <ul id="slide-out" class="side-nav sidenav-fixed">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/artit_bkg.png">
+        </div>
+        <a href="#" onclick="openLink( linkPage.profile )">
+          <span class="white-text name">{{ profileName }}</span>
+        </a>
+        <a href="#" onclick="openLink( linkPage.profile )">
+          <span class="white-text email">{{ profileEmail }}</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <a class="waves-effect" href="#" onclick="openLink( linkPage.home )">
+        <i class="material-icons">home</i>Incluir Administrador</a>
+    </li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li>
+      <a class="waves-effect" href="#" onclick="openLink( linkPage.add_opportunity )">
+        <i class="material-icons">local_offer</i>Incluir Novo Usuario</a>
+    </li>
+    <li>
+      <a class="waves-effect" href="#" onclick="logoff();">
+        <i class="material-icons">search</i>Sair</a>
+    </li>
+  </ul>
+  <!-- *******************************************-->
+
+<form id="frm">
+  <div id="lista"></div>
+</form>
+
+<div class="card-action center-align">
+  <a id="btAdd" class="waves-effect waves-light btn">Novo Admin
+    <i class="material-icons">add</i>
+  </a>
+  <a id="btAddUser" class="waves-effect waves-light btn">Novo Usu&aacute;rio
+    <i class="material-icons">add</i>
+  </a>
+  <a id="btCancel" class="waves-effect waves-light btn">Fechar
+    <i class="material-icons">cancel</i>
+  </a>
+</div>
+
+  <script language="javascript">
+
+    $('#frmContent').css('height', ($(window).height() - 65) + 'px');
+
+    /** *************************** 
+     * Inicialização do SIDNAV 
+     **************************** */
+    (function ($) {
+      $(function () {
+        $('#sideMenu').sideNav();
+      }); // end of document ready
+    })(jQuery); // end of jQuery name space
+
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+  <script src="./js/admin.js"></script>
+
+</body>
+
+</html>

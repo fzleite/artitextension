@@ -1,0 +1,15 @@
+{
+  "short_name": "Art IT Admin",
+  "name": "Art IT Apontamento de Horas",
+  "icons": [
+    {
+      "src": "images/ico/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#7986cb",
+  "background_color": "#7986cb"
+}

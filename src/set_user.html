@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Art IT - Informe o Usuario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/artitextension.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  
+  <body>
+  
+    <div class="row">
+    <div class="col s12 m6 l6">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img src="images/user_bkg.png">
+          <span class="card-title">Dados de Usu&aacute;rio Art IT</span>
+        </div>
+        <div class="card-content">
+          <p>Para utilizar a extens&atilde;o de apontamento de horas, precisamos antes saber qual o seu login da Art IT. Por favor, informe no campo abaixo seu login no formato de e-mail, lembrando que deve ser seu e-mail com o dominio @artit.com.br</p>
+          <div id="notificationAlert" class="alert"></div>
+          <form id="frm">
+              <input placeholder="Nome completo" id="nomecompleto" size="100" type="text">
+              <label for="nomecompleto">Nome Completo</label>
+              <input placeholder="e-mail" id="email" size="50" type="text" class="validate">
+              <label for="email">E-mail</label>
+              <input placeholder="chavepublica" id="chavepublica" size="50" type="text" class="validate">
+              <label for="chavepublica">Chave Publica</label>
+            </form>
+        </div>
+        <div class="card-action center-align">
+            <a id="btSend" class="waves-effect waves-light btn">Enviar <i class="material-icons">send</i></a>
+            <a id="btCancel" class="waves-effect waves-light btn">Cancelar <i class="material-icons">cancel</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+  <script src="/js/materialize.min.js"></script>
+  <script src="/js/setuser.js"></script>
+    
+  </body>
+</html>
